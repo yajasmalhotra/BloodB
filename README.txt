@@ -1,0 +1,1 @@
+A social network to connect those who need blood with those who have just a little extra.
