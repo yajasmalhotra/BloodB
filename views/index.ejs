@@ -17,11 +17,13 @@
             <a class="navbar-brand" href="#">BludBud</a>
           </div>
           <ul class="nav navbar-nav ">
+            <% if(!isAuthenticated) { %>
             <li class="active"><a href="#">Home</a></li>
-            <!-- <li><a href="#">Sign Up </a></li> -->
-
             <li><a href="/login/">Login</a></li>
+            <% } else { %> 
+            <li class="active"><a href="#">Home</a></li>
             <li><a href="/logout/">Logout</a></li>
+            <% } %>
           </ul>
         </div>
       </nav>
