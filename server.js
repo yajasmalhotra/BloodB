@@ -1,11 +1,11 @@
 const express = require('express');
 const app = express();
 
-app.set("view engine", "ejs");
+app.set("view engine", "html");
 
 app.get('/', (req, res) => {
-    res.send('Hello World!');
-    // res.sendFile('views/landing.ejs');
+    // res.send('Hello World!');
+    res.render('index.ejs', { root: '\views' })
 });
 
 app.listen(3000, () => {
